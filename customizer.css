@@ -165,16 +165,12 @@ padding-top: 30px;
     -o-filter: blur(3px); 
     -ms-filter: blur(3px);
     filter: url(#blur-effect-1);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); }
-    transition:.5s -webkit-filter linear
-    , .5s -moz-filter linear
-    , .5s -o-filter linear
-    , .5s -ms-filter linear
-    , .5s filter linear;
-    zoom: 1;
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); 
+    transition:.5s -webkit-filter linear, .5s opacity ease;
+   /* zoom: 1; */
     }
 
-    a.sang-gallery-grid:hover img {
+    .sang-gallery-grid a:hover img {
     opacity: 0.5 !important;
     filter: blur(3px); 
     -webkit-filter: blur(3px); 
@@ -182,15 +178,17 @@ padding-top: 30px;
     -o-filter: blur(3px); 
     -ms-filter: blur(3px);
     filter: url(#blur-effect-1);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); }
-    transition:.5s -webkit-filter linear
-    , .5s -moz-filter linear
-    , .5s -o-filter linear
-    , .5s -ms-filter linear
-    , .5s filter linear;
-    zoom: 1;
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); 
+    transition:.5s -webkit-filter linear, .5s opacity ease;
+   /* zoom: 1; */
     }
+/*
+note that you have to enable "Footer content" to be able to blur in Firefox. 
+due to the following code. 
+<svg id="svg-image-blur" height="0px"><filter id="blur-effect-1"><feGaussianBlur stdDeviation="3" /></filter></svg></p>
 
+
+*/
 
 
 

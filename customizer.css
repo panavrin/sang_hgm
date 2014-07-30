@@ -1,0 +1,254 @@
+/*.x-navbar .x-nav > li > a:hover,.x-navbar .x-nav > .current-menu-item > a
+{
+  -webkit-box-shadow:inset 0 4px 0 0 #00ff00;
+  box-shadow:inset 0 4px 0 0 #0000ff;
+}
+*/
+
+/* padding between the nav bar  (or the slider in case of the front page)  and the content */
+
+.x-container-fluid.offset {
+margin: 0px auto;
+}
+
+#menu-item-25 a:hover , #menu-item-25.current-menu-item > a{
+ box-shadow: none !important; -webkit-box-shadow: none !important; 
+text-shadow:1px 1px 1px #000;
+transition: text-shadow 0.5s ease;
+
+}
+
+#menu-item-23 a:hover, #menu-item-23.current-menu-item > a { box-shadow: none !important; -webkit-box-shadow: none !important; 
+text-shadow:1px 1px 1px #61AE24;
+color:#61AE24 !important;
+
+  transition: text-shadow 0.5s ease, color 0.5s ease;
+
+}
+
+#menu-item-22 a:hover, #menu-item-22.current-menu-item > a { box-shadow: none !important; -webkit-box-shadow: none !important; 
+text-shadow:1px 1px 1px #FF5C00;
+color:#FF5C00 !important;
+
+  transition: text-shadow 0.5s ease,color 0.5s ease;
+
+}
+
+#menu-item-24 a:hover, #menu-item-24.current-menu-item > a { box-shadow: none !important; -webkit-box-shadow: none !important; 
+text-shadow:1px 1px 1px #113F8C;
+color:#113F8C !important;
+
+  transition: text-shadow 0.5s ease, color 0.5s ease;
+
+}
+
+.x-navbar .x-nav > li > a {
+padding-top: 30px;
+}
+
+/*
+  .x-boxed-layout-active .x-navbar-fixed-top
+  {
+    left:0px;
+    right:0px;
+  }
+*/
+  .x-container-fluid.width{
+    width:100%;
+  }
+
+    .x-navbar {
+    /*background: rgba(255, 255, 255, 0.8);*/
+    background-image:url('http://www.igenomed.org/mgh/wp-content/uploads/2014/07/header_background.png');
+    background-repeat: no-repeat;
+    background-position: 76px 53px;
+    height:95px;
+    box-shadow: none;
+
+    /*text-shadow:
+         -1px -1px 1px #000,  
+          1px -1px 1px #000,
+          -1px 1px 1px #000,
+           1px 1px 1px #000;
+           */
+  /*  width: 100%!important;
+    border-bottom: none;
+    letter-spacing: -2px;
+    */
+    }
+
+
+    .x-slider-revolution-container.below {
+    border-bottom: 0;
+    }
+
+
+  .x-boxed-layout-active .site {
+  border:none;
+  box-shadow:none;
+  }
+
+   
+    .x-page-title-disabled .entry-content {
+        margin-top: -30px;
+    }
+
+    /* Add spacing below feature image */
+    .entry-featured, .entry-header {
+    margin: 10px;
+    }
+
+
+
+    .sang-gallery-grid{
+    margin-left: auto;
+    margin-right: auto;
+    width:960px;
+    text-align: center;
+    }
+
+    .sang-gallery-grid nav ul {
+    list-style: none;
+    }
+    .sang-gallery-grid img{
+    padding:5px;
+    }
+    .sang-gallery-grid nav li {
+    display:inline-table
+    }
+
+    .x-logobar {
+    background-color: #ffffff;
+    }
+
+    /* this is to fix header and make it transparent when scrolled */
+/*
+    .masthead {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(230, 255, 230, 0.7);
+    }
+*/
+    .x-topbar-menu{
+    display: block;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    }
+    /*
+    #menu-main{
+    border-style:solid;
+    border-bottom-color:#ffffff;
+    border-left-color:#ffffff;
+    border-right-color:#ffffff;
+    border-top-color:#333333;
+    }
+    */
+    .page-template-template-layout-portfolio-php .x-responsive-video-inner:before {
+      content:"";
+      display:block;
+      left:0;
+      right:0;
+      bottom:0;
+      top:0;
+      position:absolute;
+      z-index:100000;
+    }
+
+    a.entry-thumb:hover img, .x-recent-posts a:hover img {
+    opacity: 0.5 !important;
+    filter: blur(3px); 
+    -webkit-filter: blur(3px); 
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px); 
+    -ms-filter: blur(3px);
+    filter: url(#blur-effect-1);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); }
+    transition:.5s -webkit-filter linear
+    , .5s -moz-filter linear
+    , .5s -o-filter linear
+    , .5s -ms-filter linear
+    , .5s filter linear;
+    zoom: 1;
+    }
+
+    a.sang-gallery-grid:hover img {
+    opacity: 0.5 !important;
+    filter: blur(3px); 
+    -webkit-filter: blur(3px); 
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px); 
+    -ms-filter: blur(3px);
+    filter: url(#blur-effect-1);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); }
+    transition:.5s -webkit-filter linear
+    , .5s -moz-filter linear
+    , .5s -o-filter linear
+    , .5s -ms-filter linear
+    , .5s filter linear;
+    zoom: 1;
+    }
+
+
+
+
+    .entry-thumb:before {
+    content: "" !important;
+    display:none;
+    }
+
+    .x-recent-posts .format-standard .x-recent-posts-img:before, .x-recent-posts .format-video .x-recent-posts-img:before, .x-recent-posts .format-audio .x-recent-posts-img:before, .x-recent-posts .format-image .x-recent-posts-img:before, .x-recent-posts .format-gallery .x-recent-posts-img:before, .x-recent-posts .format-link .x-recent-posts-img:before, .x-recent-posts .format-quote .x-recent-posts-img:before, .x-recent-posts .x-portfolio .x-recent-posts-img:before {
+    content:"" !important;
+    display:none;
+    }
+
+    .x-recent-posts .x-recent-posts-img {
+        background-color: #ffffff !important;
+        overflow:hidden;
+        height:200px;
+    }
+
+    .x-recent-posts img {
+      width: auto;
+      height:100%;
+      max-width:none;
+    }
+
+
+    .x-recent-posts-banner-text{
+    position:absolute;
+    top:50px;
+    left:10px;
+    /*background-color: white;*/
+    word-wrap: break-word;
+    max-width:95%;
+    white-space:normal;
+    font-family:Helvetica,sans-serif;
+    font-size:24px;
+    color:#000000;
+    vertical-align:middle;
+    text-align:center;
+    }
+
+    .x-main .entry-wrap {
+    border:none;
+    box-shadow:none;
+    padding:10px 0px;
+    }
+  /*
+    @media (min-width:1024px)  and (max-width:1280px) {
+    .x-navbar-static-active .x-navbar .x-nav > li > a, .x-navbar-fixed-top-active .x-navbar .x-nav > li > a {
+    font-size: 18px!important;
+    }
+  }
+  */
+    @media (min-width:980px)  and (max-width:1025px) {
+    .x-navbar-static-active .x-navbar .x-nav > li > a, .x-navbar-fixed-top-active .x-navbar .x-nav > li > a {
+    font-size: 16px!important;
+
+    }
+  }
+
+    

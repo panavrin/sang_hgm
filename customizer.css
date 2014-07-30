@@ -89,6 +89,31 @@ padding-top: 30px;
   }
 
    
+   span.text-content {
+  /*background: rgba(0,0,0,0.5);*/
+  color: black;
+  cursor: pointer;
+  display: table;
+  height: 220px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+    opacity: 0;
+
+}
+ 
+ a:hover span.text-content {
+  opacity: 1;
+  transition:0.2s opacity ease;
+}
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Merriweather, Palatino, 'Palatino Linotype', 'Hoefler Text', Times, 'Times New Roman', serif;
+}
+
     .x-page-title-disabled .entry-content {
         margin-top: -30px;
     }
@@ -157,7 +182,7 @@ padding-top: 30px;
       z-index:100000;
     }
 
-    a.entry-thumb:hover img, .x-recent-posts a:hover img {
+    a.entry-thumb:hover img, .x-recent-posts a:hover img, .sang-gallery-grid a:hover img  {
     opacity: 0.5 !important;
     filter: blur(3px); 
     -webkit-filter: blur(3px); 
@@ -170,18 +195,6 @@ padding-top: 30px;
    /* zoom: 1; */
     }
 
-    .sang-gallery-grid a:hover img {
-    opacity: 0.5 !important;
-    filter: blur(3px); 
-    -webkit-filter: blur(3px); 
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px); 
-    -ms-filter: blur(3px);
-    filter: url(#blur-effect-1);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3'); 
-    transition:.5s -webkit-filter linear, .5s opacity ease;
-   /* zoom: 1; */
-    }
 /*
 note that you have to enable "Footer content" to be able to blur in Firefox. 
 due to the following code. 
@@ -214,8 +227,17 @@ due to the following code.
       max-width:none;
     }
 
+    .sang-gallery-grid-posts-img{
+        background-color: #ffffff !important;
+        overflow:hidden;
+        position:relative;
+    }
+    .sang-gallery-grid-posts-img img{
+      z-index: 2000;  
+    }
+    
 
-    .x-recent-posts-banner-text{
+    .x-recent-posts-banner-text, .sang-gallery-grid-banner-text{
     position:absolute;
     top:50px;
     left:10px;

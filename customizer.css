@@ -89,28 +89,32 @@ padding-top: 30px;
   }
 
    
-   span.text-content {
-  /*background: rgba(0,0,0,0.5);*/
+   span.snag-banner-text {
   color: black;
   cursor: pointer;
   display: table;
-  height: 220px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 220px;
-    opacity: 0;
+/*  width: 300px;
+  height: 300px;
+  */
+  width : 100%;
+  height : 100%;
+  opacity: 0;
 
 }
  
- a:hover span.text-content {
+ a:hover span.snag-banner-text {
   opacity: 1;
   transition:0.2s opacity ease;
+
 }
-span.text-content span {
+span.snag-banner-text span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+  font-size:24px;
   font-family: Merriweather, Palatino, 'Palatino Linotype', 'Hoefler Text', Times, 'Times New Roman', serif;
 }
 
@@ -121,6 +125,9 @@ span.text-content span {
     /* Add spacing below feature image */
     .entry-featured, .entry-header {
     margin: 10px;
+    border: none!important; 
+    border-bottom: none!important; 
+}
     }
 
 
@@ -128,18 +135,18 @@ span.text-content span {
     .sang-gallery-grid{
     margin-left: auto;
     margin-right: auto;
-    width:960px;
     text-align: center;
     }
 
     .sang-gallery-grid nav ul {
     list-style: none;
+    margin:0 0 0 0;
     }
-    .sang-gallery-grid img{
-    padding:5px;
-    }
+    
     .sang-gallery-grid nav li {
-    display:inline-table
+    width:25%;
+    float:left;
+    padding:10px;
     }
 
     .x-logobar {
@@ -182,7 +189,7 @@ span.text-content span {
       z-index:100000;
     }
 
-    a.entry-thumb:hover img, .x-recent-posts a:hover img, .sang-gallery-grid a:hover img  {
+    a.entry-thumb:hover img, .x-recent-posts a:hover img, .sang-gallery-grid a:hover img, .snag-banner-text-wrapper a:hover img  {
     opacity: 0.5 !important;
     filter: blur(3px); 
     -webkit-filter: blur(3px); 
@@ -231,11 +238,37 @@ due to the following code.
         background-color: #ffffff !important;
         overflow:hidden;
         position:relative;
+        height:250px;
     }
-    .sang-gallery-grid-posts-img img{
+
+    .snag-banner-text-wrapper{
+        background-color: #ffffff !important;
+        position:relative;
+        height:250px;
+    }
+
+/*
+    .snag-banner-text-wrapper{
+        overflow:hidden;
+        position:relative;
+    }
+    */
+/*
+    .snag-banner-text-wrapper img {
+      width: auto;
+      height:100%;
       z-index: 2000;  
     }
-    
+*/
+    .sang-gallery-grid-posts-img img{
+      width: auto;
+      height:100%;
+      max-width:none;
+    }
+    .snag-banner-text-wrapper img {
+      width: auto;
+      height:auto;
+    }
 
     .x-recent-posts-banner-text, .sang-gallery-grid-banner-text{
     position:absolute;
